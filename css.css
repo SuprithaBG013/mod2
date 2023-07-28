@@ -1,0 +1,54 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 125%;
+    text-align: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ffcc00; /* Yellow color for section title background */
+    padding: 5px 10px;
+    color: black; /* Adjust the text color to be readable on the yellow background */
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%;
+    }
+    #sushi {
+        width: 100%;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
